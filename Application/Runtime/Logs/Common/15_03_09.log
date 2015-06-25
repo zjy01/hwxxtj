@@ -1,0 +1,18 @@
+[ 2015-03-09T19:09:56+08:00 ] 127.0.0.1 /hwxxtj/index.php/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.021839s ]
+ERR: 无法加载模块:Test
+
+[ 2015-03-09T19:10:15+08:00 ] 127.0.0.1 /hwxxtj/index.php/test/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+ERR: 无法加载模块:Test
+
+[ 2015-03-09T19:10:24+08:00 ] 127.0.0.1 /hwxxtj/index.php/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+ERR: 无法加载模块:Index
+

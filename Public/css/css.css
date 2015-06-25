@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "微软雅黑";
+}
+/*头部*/
+.header{
+    width: 100%;
+    height: 70px;
+    padding-top: 10px;
+    background-color: coral;
+}
+.web_title{
+    height: 45px;
+    width: 960px;
+    margin: 0 auto;
+    line-height: 50px;
+    font-size: 40px;
+    text-align: center;
+}
+.nav_box{
+    width: 960px;
+    margin: 0 auto;
+    height: 25px;
+    text-align: center;
+}
+.nav_box ul li{
+    display: inline-block;
+    margin:5px;
+}
+.nav_box ul li a{
+    color: #003bb3;
+}
+.user_box{
+    height:10px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+.user_box a{
+    color: #ff0000;
+    text-decoration: none;
+}
+
+/*内容*/
+.container{
+    width: 100%;
+}
+.container table{
+    font-size: 0.86em;
+    margin: 5px auto 40px;
+}
+.indexTable td{
+    padding: 8px 8px;
+    border-left:3px solid #ffffff;
+    border-bottom:2px solid #ffffff;
+}
+/*添加用户*/
+.user_add,.user_del{
+    width: 600px;
+    border-top: solid 3px #000000;
+    margin: 50px auto;
+}
+.user_add h2,.user_del h2{
+    margin-left: 20px;
+}
+.user_add form{
+    display: block;
+    width: 320px;
+    margin: 20px auto;
+    font-size: 14px;
+}
+.user_add input[type="submit"]{
+    width: 60px;
+    margin-top: 5px;
+}
+.user_del table{
+    margin: 0 auto;
+}
+.user_del input[type="submit"]{
+    width: 80px;
+    margin-top: 5px;
+}
+
+/*项目添加*/
+.container table textarea{
+    width: 100%;
+    display: block;
+    overflow: auto;
+}
+.container table #otherUnit{
+    height: 60%;
+    display: none;
+}
+.container table .device{
+    height: 30%;
+}
+.time-txt{
+    width: 80px;
+}
+/*项目处理*/
+.weeks{
+    margin:10px 20px 0;
+    padding-bottom: 5px;
+    border-bottom: solid 1px #666666;
+}
+.weeks .week{
+    display: inline-block;
+    padding: 0.3em 0.6em;
+    border: solid 1px #149bdf;
+    color: #149bdf;
+    text-decoration: none;
+    margin: 0 5px;
+    margin-bottom: 5px;
+}
+#proSetTable textarea{
+    z-index: 999;
+    text-align: center;
+}
+#proSetTable button{
+    white-space: nowrap;
+    margin:2px;
+    cursor: pointer;
+}
+.CB{
+    color: #0088cc;
+}
+.DB{
+    color: #ff0000;
+}
+.special2{
+    display: none;
+    background-color: #eeeeee;
+}
+.changeTr{
+    display: none;
+    background-color: #eeeeee;
+}
+.container table .otherUnit{
+    height: 60%;
+    display: none;
+}
+
+/*负责的项目*/
+.pro_empty{
+    width: 300px; height: 90px; text-align: center;
+    background-color: coral;
+    margin: 30px auto;
+    padding: 30px 0;
+}
+.pro_empty a{
+    margin: 15px auto;
+    display: block;
+    width: 90px;
+    height: 30px;
+    box-shadow: 2px 2px  3px black;
+    line-height: 28px;
+    text-decoration: none;
+    color: #000000;
+    background-color: #bababa;
+}
+.pro_empty a:hover{
+    box-shadow: 1px 1px  1px black;
+    position: relative;
+    left: 1px;
+    top: 1px;
+}
+/*下载*/
+.tableDown{
+    padding: 4px 8px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #006dcc;
+}
+.tableDown:hover{
+    background-color: #0044cc;
+}
+
+/*底部*/
+.footer{
+    height: 30px;
+    width:100%;
+    border-top: solid coral 2px;
+    background-color: #dddddd;
+    line-height: 30px;
+    font-size: 12px;
+    color: #888888;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+.footer a{
+    color: #666666;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>会务信息统计系统</title>
+    <link href="__PUBLIC__/css/css.css" rel="stylesheet">
+    <script src="__PUBLIC__/js/jquery-2.1.3.min.js"></script>
+    <script src="__PUBLIC__/js/js.js"></script>
+    <script language="JavaScript">
+        window.onload=function(){
+            indexTable();
+        }
+    </script>
+</head>
+<body>
+<div class="page">
+   <include file="header" />
+    <div class="container">
+        <table cellspacing="0"  border="0" width="100%" class="indexTable">
+            <tr>
+                <?php
+                    if($pro[0]['term']==1) $term='上半学期';
+                     else $term='下半学期';
+                ?>
+                <td colspan="10" align="center"><h2>工作安排登记表（{$pro[0]['schoolYear']}学年{$term}第 {$pro[0]['week']} 周）</h2></td>
+            </tr>
+            <tr align="center">
+                <td></td>
+                <td></td>
+                <td colspan="5"><strong>{$special['part1']}</strong></td>
+                <td>{$special['part2']}</td>
+                <td>{$special['part3']}</td>
+                <td>{$special['part4']}</td>
+            </tr>
+            <tr border="0" align="center" id="title">
+                <th width="4.06%">收单时间</th>
+                <th width="5.69%">单位</th>
+                <th width="11.38%">项目名称</th>
+                <th width="6.91%">使用日期</th>
+                <th width="7.31%">使用时间（起止）</th>
+                <th width="10.16%">联系人/联系电话</th>
+                <th width="10.97%">使用设备</th>
+                <th width="12.19%">人员</th>
+                <th width="13%">地点</th>
+                <th width="18.29%">备注</th>
+            </tr>
+            <tr align="center">
+                <td></td>
+                <td></td>
+                <td>{$special['proName']}</td>
+                <td colspan="4">{$special['part5']}</td>
+                <td>{$special['people']}</td>
+                <td>{$special['place']}</td>
+                <td>{$special['remark']}</td>
+            </tr>
+            <?php foreach($pro as $key=>$proj){
+                $User=M('User');
+                $captain=$User->where('id='.$proj['captain'])->field('name')->select();
+                $people=$captain[0]['name'];
+                $peo=json_decode($proj['people']);
+                foreach($peo as $p){
+                    $peop=$User->where('id='.$p)->field('name')->select();
+                    $people.="、".$peop[0]['name'];
+                }
+             ?>
+            <tr align="center">
+                <td>{$proj['doneTime']}</td>
+                <td>{$proj['unit']}</td>
+                <td>{$proj['proName']}</td>
+                <td>{$proj['useDate']}</td>
+                <td>{$proj['useTime']}</td>
+                <td>{$proj['tel']}</td>
+                <td>{$proj['device']}</td>
+                <td>{$people}</td>
+                <td>{$proj['place']}</td>
+                <td>{$proj['remark']}</td>
+            </tr>
+            <?php } ?>
+        </table>
+    </div>
+    <include file="footer" />
+</div>
+</body>
+</html>

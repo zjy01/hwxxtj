@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>会务信息统计系统--负责的项目</title>
+    <link href="__PUBLIC__/css/css.css" rel="stylesheet">
+    <style>
+    .proJoinTr{
+        min-height: 30px;;
+    }
+    </style>
+</head>
+<body>
+<div class="page">
+    <include file="header" />
+    <div class="container">
+        <?php if(empty($schoolY)){ ?>
+        <h1 style="text-align: center; margin-top: 100px;">暂无参加的项目</h1>
+        <?php } else{ ?>
+        <div class="weeks">
+            <?php
+           foreach($schoolY as $schoolYear){
+                if($schoolYear['term']==1) $t='上';
+                else $t='下';
+                if($schoolYear['schoolYear']!=$pro[0]['schoolYear'] || $schoolYear['term']!=$pro[0]['term']){
+            ?>
+            <a href="__CONTROLLER__/proJoin/{$schoolYear['schoolYear']}/{$schoolYear['term']}" class="week">{$schoolYear['schoolYear']}（{$t}）</a>
+            <?php } else{ ?>
+            <div class="week" style="border-color: #002a80; color: #002a80;">{$schoolYear['schoolYear']}（{$t}）</div>
+            <?php }
+            } ?>
+        </div>
+        <div class="weeks">
+            <?php
+           foreach($weeks as $week){
+                if($week['week']!=$pro[0]['week']){
+            ?>
+            <a href="__CONTROLLER__/proJoin/{$pro[0]['schoolYear']}/{$pro[0]['term']}/{$week['week']}" class="week">{$week['week']}</a>
+            <?php } else{ ?>
+            <div class="week" style="border-color: #002a80; color: #002a80;">{$week['week']}</div>
+            <?php }
+            } ?>
+        </div>
+        <?php if(empty($pro)){ ?>
+            <div class="pro_empty">
+                <h3>您在本周无参与的项目</h3>
+            </div>
+        <?php } else{  ?>
+        <div class="weeks">
+            <?php
+           foreach($pro as $proList){
+                if($proList['id']!=$proL['id']){
+            ?>
+            <a href="__CONTROLLER__/proJoin/{$pro[0]['schoolYear']}/{$pro[0]['term']}/{$pro[0]['week']}/{$proList['id']}" class="week">{$proList['proName']}</a>
+            <?php } else{ ?>
+            <div class="week" style="border-color: #002a80; color: #002a80;">{$proList['proName']}</div>
+            <?php }
+            } ?>
+        </div>
+        <?php if(!isset($wc)){ ?>
+        <div class="pro_empty">
+            <h3>加班统计表还未生成</h3>
+            <h3>通知负责人生成吧</h3>
+        </div>
+        <?php } else{  ?>
+
+        <table cellspacing="0"  border="1" width="99.5%">
+            <tr height="36">
+                <td colspan="7" align="center"><h3><a href="__MODULE__/Excel/workExcel/{$wc[0]['proId']}" class="tableDown" target="_blank">点击下载</a></h3></td>
+            </tr>
+            <tr align="center">
+                <td colspan="7" align="center"><h2>加班统计表</h2></td>
+            </tr>
+            <tr align="center">
+                <th width="8%">日期</th>
+                <th width="12%">地点</th>
+                <th width="16%">加班时段</th>
+                <th width="4%">加班时数</th>
+                <th width="20%">加班内容</th>
+                <th width="16">值班人员</th>
+                <th width="20%">备注</th>
+            </tr>
+            <?php foreach($wc as $key => $work){
+            $User=M('User');
+            $worker=$User->where('id="'.$work['worker'].'"')->select();
+            ?>
+                <tr align="center" class="proJoinTr">
+                    <td>{$work['useDate']}</td>
+                    <td>{$work['place']}</td>
+                    <td>{$work['useTime']}</td>
+                    <td>{$work['workTime']}</td>
+                    <td>{$work['proName']}</td>
+                    <td>{$worker[0]['name']}</td>
+                    <td>{$work['remark']}</td>
+                </tr>
+            <?php } ?>
+        </table>
+        <?php }
+            }
+         } ?>
+    </div>
+    <include file="footer" />
+</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+[ 2015-01-26T14:12:27+08:00 ] ::1 /thinkphp/home.php/hello
+ERR: 无法加载模块:Hello
+
+[ 2015-01-26T14:15:36+08:00 ] ::1 /thinkphp/home.php/hello
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+ERR: 无法加载模块:Hello
+
+[ 2015-01-26T14:20:00+08:00 ] ::1 /thinkphp/ihome.php/hello
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+ERR: 无法加载模块:Ihome.php
+
+[ 2015-01-26T14:20:08+08:00 ] ::1 /thinkphp/home.php/hello
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+ERR: 无法加载模块:Hello
+

@@ -1,0 +1,31 @@
+<head>
+    <link href="__PUBLIC__/css/jquery-ui.css" rel="stylesheet">
+</head>
+<div class="header">
+    <span class="user_box">你好，{$user['name']} <a href="__CONTROLLER__/logout">[注销]</a></span>
+    <div class="web_title">会务信息统计系统</div>
+    <div class="nav_box">
+        <ul>
+            <li><a href="__CONTROLLER__/index">首页</a></li>
+            <li>|</li>
+            <?php if($user['rank']!=0){ ?>
+                <li><a href="__CONTROLLER__/proJoin">参与的项目</a></li>
+                <li>|</li>
+                <li><a href="__CONTROLLER__/proLead">负责的项目</a></li>
+                <li>|</li>
+            <?php }  else{ ?>
+                <li><a href="__CONTROLLER__/proLead">负责的项目</a></li>
+                <li>|</li>
+                <li><a href="__CONTROLLER__/proAdd">项目添加</a></li>
+                <li>|</li>
+                <li><a href="__CONTROLLER__/proSet">项目处理</a></li>
+                <li>|</li>
+                <li><a href="__CONTROLLER__/userSet">用户管理</a></li>
+                <li>|</li>
+            <?php } ?>
+            <li><a href="__CONTROLLER__/password">密码修改</a></li>
+            <li>|</li>
+            <li><a href="__CONTROLLER__/tableDown">统计表下载</a></li>
+        </ul>
+    </div>
+</div>

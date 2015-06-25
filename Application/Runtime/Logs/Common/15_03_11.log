@@ -1,0 +1,12 @@
+[ 2015-03-11T01:03:30+08:00 ] 127.0.0.1 /hwxxtj/index.php/userSet.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000900s ]
+ERR: 无法加载模块:UserSet
+
+[ 2015-03-11T01:04:42+08:00 ] 127.0.0.1 /hwxxtj/index.php/userSet
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+ERR: 无法加载模块:UserSet
+

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>会务信息统计系统--项目管理</title>
+    <link href="__PUBLIC__/css/css.css" rel="stylesheet">
+    <script src="__PUBLIC__/js/jquery-2.1.3.min.js"></script>
+    <script src="__PUBLIC__/js/js.js"></script>
+    <script>
+        $(document).ready(function(){
+            proSet();
+            proChange();
+        });
+    </script>
+</head>
+<body>
+<div class="page">
+    <include file="header" />
+    <div class="container">
+        <?php if(empty($schoolY)){ ?>
+        <h1 style="text-align: center; margin-top: 100px;">暂无无项目</h1>
+        <?php } else{ ?>
+        <div class="weeks">
+            <?php
+           foreach($schoolY as $schoolYear){
+                if($schoolYear['term']==1) $t='上';
+                else $t='下';
+                if($schoolYear['schoolYear']!=$pro[0]['schoolYear'] || $schoolYear['term']!=$pro[0]['term']){
+            ?>
+            <a href="__CONTROLLER__/tableDown/{$schoolYear['schoolYear']}/{$schoolYear['term']}" class="week">{$schoolYear['schoolYear']}（{$t}）</a>
+            <?php } else{ ?>
+            <div class="week" style="border-color: #002a80; color: #002a80;">{$schoolYear['schoolYear']}（{$t}）</div>
+            <?php }
+            } ?>
+        </div>
+        <div class="weeks">
+            <?php
+           foreach($weeks as $week){
+                if($week['week']!=$pro[0]['week']){
+            ?>
+            <a href="__CONTROLLER__/tableDown/{$pro[0]['schoolYear']}/{$pro[0]['term']}/{$week['week']}" class="week">{$week['week']}</a>
+            <?php } else{ ?>
+            <div class="week" style="border-color: #002a80; color: #002a80;">{$week['week']}</div>
+            <?php }
+            } ?>
+        </div>
+        <table cellspacing="0"  border="1" width="99.5%" id="proSetTable">
+            <tr height="36">
+                <td colspan="11" align="center"><h3><a href="__MODULE__/Excel/proExcel/{$pro[0]['schoolYear']}/{$pro[0]['term']}/{$pro[0]['week']}" class="tableDown" target="_blank">点击下载</a></h3></td>
+            </tr>
+            <tr align="center">
+                <?php
+                    if($proj[0]['term']==1) $term='上半学期';
+                     else $term='下半学期';
+
+                ?>
+                <td colspan="11" align="center"><h2>工作安排登记表（{$pro[0]['schoolYear']}学年{$term}第 {$pro[0]['week']} 周）</h2>
+            </tr>
+            <tr align="center" class="special1">
+                    <td></td>
+                    <td></td>
+                    <td colspan="5"><strong>{$special['part1']}</strong></td>
+                    <td>{$special['part2']}</td>
+                    <td colspan="2">{$special['part3']}</td>
+                    <td colspan="2">{$special['part4']}</td>
+                </tr>
+                <tr align="center" class="special2">
+                    <td></td>
+                    <td></td>
+                    <td colspan="5"><textarea style="font-weight: bold;" name="part1">{$special['part1']}</textarea></td>
+                    <td><textarea name="part2">{$special['part2']}</textarea></td>
+                    <td colspan="2"><textarea name="part3">{$special['part3']}</textarea></td>
+                    <td colspan="2"><textarea name="part4">{$special['part4']}</textarea></td>
+                </tr>
+                <tr  align="center">
+                    <td width="4.06%">收单时间</td>
+                    <td width="5.69%">单位</td>
+                    <td width="11.38%">项目名称</td>
+                    <td width="6.91%">使用日期</td>
+                    <td width="7.31%">使用时间（起止）</td>
+                    <td width="10.16%">联系人/联系电话</td>
+                    <td width="10.97%">使用设备</td>
+                    <td width="9%">人员(除负责人)</td>
+                    <td width="9%">负责人</td>
+                    <td width="9%">地点</td>
+                    <td width="11.58%">备注</td>
+                </tr>
+                <tr align="center"  class="special1">
+                    <td></td>
+                    <td></td>
+                    <td>{$special['proName']}</td>
+                    <td colspan="4">{$special['part5']}</td>
+                    <td colspan="2">{$special['people']}</td>
+                    <td>{$special['place']}</td>
+                    <td>{$special['remark']}</td>
+                </tr>
+                <tr align="center"  class="special2">
+                    <td></td>
+                    <td></td>
+                    <td><textarea name="proName">{$special['proName']}</textarea></td>
+                    <td colspan="4"><textarea name="part5">{$special['part5']}</textarea></td>
+                    <td colspan="2"><textarea name="people">{$special['people']}</textarea></td>
+                    <td><textarea name="place">{$special['place']}</textarea></td>
+                    <td><textarea name="remark">{$special['remark']}</textarea></td>
+                </tr>
+            <?php foreach($pro as $proj){
+            $User=M('User');
+            $captain=$User->where('id='.$proj['captain'])->field('name')->select();
+            $captain=$captain[0]['name'];
+            if($proj['people']=='null'){
+                $people='无';
+                $peo=null;
+            }
+            else{
+                $peo=json_decode($proj['people']);
+                foreach($peo as $key=>$p){
+                    $peop=$User->where('id='.$p)->field('name')->select();
+                    if($key==0) $people=$peop[0]['name'];
+                    else $people.="、".$peop[0]['name'];
+                }
+            }
+            ?>
+                <tr align="center" class="showTr">
+                    <td>{$proj['doneTime']}</td>
+                    <td>{$proj['unit']}</td>
+                    <td>{$proj['proName']}</td>
+                    <td>{$proj['useDate']}</td>
+                    <td>{$proj['useTime']}</td>
+                    <td>{$proj['tel']}</td>
+                    <td>{$proj['device']}</td>
+                    <td>{$people}</td>
+                    <td>{$captain}</td>
+                    <td>{$proj['place']}</td>
+                    <td>{$proj['remark']}</td>
+                </tr>
+            <?php } ?>
+        </table>
+        <?php }  ?>
+    </div>
+    <include file="footer" />
+</div>
+</body>
+</html>

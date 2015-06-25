@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>会务信息统计系统--负责的项目</title>
+    <link href="__PUBLIC__/css/css.css" rel="stylesheet">
+    <script src="__PUBLIC__/js/jquery-2.1.3.min.js"></script>
+    <script src="__PUBLIC__/js/js.js"></script>
+</head>
+<body>
+<div class="page">
+    <include file="header" />
+    <div class="container">
+        <?php if(empty($schoolY)){ ?>
+        <h1 style="text-align: center; margin-top: 100px;">暂无负责的项目</h1>
+        <?php } else{ ?>
+        <div class="weeks">
+            <?php
+           foreach($schoolY as $schoolYear){
+                if($schoolYear['term']==1) $t='上';
+                else $t='下';
+                if($schoolYear['schoolYear']!=$pro[0]['schoolYear'] || $schoolYear['term']!=$pro[0]['term']){
+            ?>
+            <a href="__CONTROLLER__/proLead/{$schoolYear['schoolYear']}/{$schoolYear['term']}" class="week">{$schoolYear['schoolYear']}（{$t}）</a>
+            <?php } else{ ?>
+            <div class="week" style="border-color: #002a80; color: #002a80;">{$schoolYear['schoolYear']}（{$t}）</div>
+            <?php }
+            } ?>
+        </div>
+        <div class="weeks">
+            <?php
+           foreach($weeks as $week){
+                if($week['week']!=$pro[0]['week']){
+            ?>
+            <a href="__CONTROLLER__/proLead/{$pro[0]['schoolYear']}/{$pro[0]['term']}/{$week['week']}" class="week">{$week['week']}</a>
+            <?php } else{ ?>
+            <div class="week" style="border-color: #002a80; color: #002a80;">{$week['week']}</div>
+            <?php }
+            } ?>
+        </div>
+        <div class="weeks">
+            <?php
+           foreach($pro as $proList){
+                if($proList['id']!=$proL['id']){
+            ?>
+            <a href="__CONTROLLER__/proLead/{$pro[0]['schoolYear']}/{$pro[0]['term']}/{$pro[0]['week']}/{$proList['id']}" class="week">{$proList['proName']}</a>
+            <?php } else{ ?>
+            <div class="week" style="border-color: #002a80; color: #002a80;">{$proList['proName']}</div>
+            <?php }
+            } ?>
+        </div>
+        <?php if(!isset($wc)){ ?>
+        <div class="pro_empty">
+            <h3>加班统计表还未生成</h3>
+            <a href="__CONTROLLER__/createTable/{$proL['id']}/">生成加班表</a>
+        </div>
+        <?php } else{  ?>
+
+        <table cellspacing="0"  border="1" width="99.5%" id="proSetTable">
+            <tr height="36">
+                <td colspan="8" align="center"><h3><a href="__MODULE__/Excel/workExcel/{$wc[0]['proId']}" class="tableDown" target="_blank">点击下载</a></h3></td>
+            </tr>
+            <tr align="center">
+                <td colspan="8" align="center"><h2>加班统计表</h2></td>
+            </tr>
+            <tr align="center">
+                <th width="8%">日期</th>
+                <th width="12%">地点</th>
+                <th width="16%">加班时段</th>
+                <th width="4%">加班时数</th>
+                <th width="20%">加班内容</th>
+                <th width="16">值班人员</th>
+                <th width="20%">备注</th>
+                <th width="4%">操作</th>
+            </tr>
+            <?php foreach($wc as $key => $work){
+                $User=M('User');
+                $worker=$User->where('id="'.$work['worker'].'"')->select();
+            ?>
+            <form name="proLead" method="post" action="__CONTROLLER__/proLeadDeal/{$work['id']}">
+            <tr align="center" class="showTr">
+                <td>{$work['useDate']}</td>
+                <td>{$work['place']}</td>
+                <td>{$work['useTime']}</td>
+                <td>{$work['workTime']}</td>
+                <td>{$work['proName']}</td>
+                <td>{$worker[0]['name']}</td>
+                <td>{$work['remark']}</td>
+                <td>
+                    <button type="button" class="CB">修改</button>
+                    <button type="submit" class="DB">删除</button>
+                    <input type="hidden" name="operate" value="1">
+                    <input type="hidden" name="url" value="__SELF__">
+                </td>
+            </tr>
+            <tr align="center"  class="changeTr">
+                <td><textarea name="useDate">{$work['useDate']}</textarea></td>
+                <td><textarea name="place">{$work['place']}</textarea></td>
+                <td><textarea name="useTime">{$work['useTime']}</textarea></td>
+                <td><textarea name="workTime">{$work['workTime']}</textarea></td>
+                <td><textarea name="proName">{$work['proName']}</textarea></td>
+                <td>{$worker[0]['name']}</td>
+                <td><textarea name="remark">{$work['remark']}</textarea></td>
+                <td>
+                    <button type="submit" class="changeSub">保存</button>
+                </td>
+            </tr>
+            </form>
+            <?php } ?>
+        </table>
+        <?php }
+         } ?>
+    </div>
+    <include file="footer" />
+    <script>
+        $(document).ready(function(){
+            proLead();
+            textArea();
+            proChange();
+        });
+    </script>
+</div>
+</body>
+</html>
