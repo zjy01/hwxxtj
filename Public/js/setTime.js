@@ -59,10 +59,15 @@ function _SetTime(tt) {
         tleft += tt.offsetLeft;
     }
     $("#_contents").css({
-        'top':ttop + thei + 15,
+        'top':ttop + thei + 4,
         'left':tleft,
         'visibility':"visible"
     });
+    //$(_fieldname).focusout(function(){
+    //    $("#_contents").css({
+    //        'visibility':"hidden"
+    //    });
+    //});
 }
 function _select() {
     if(document.all._shour.value>document.all._ehour.value){

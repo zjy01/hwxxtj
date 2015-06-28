@@ -23,8 +23,12 @@
                 <li>|</li>
                 <li><a href="/hwxxtj/index.php/Home/Index/proLead">负责的项目</a></li>
                 <li>|</li>
+                <li><a href="/hwxxtj/index.php/Home/Index/countTime">地点设备使用时间</a></li>
+                <li>|</li>
             <?php } else{ ?>
                 <li><a href="/hwxxtj/index.php/Home/Index/proLead">负责的项目</a></li>
+                <li>|</li>
+                <li><a href="/hwxxtj/index.php/Home/Index/countTime">地点设备使用时间</a></li>
                 <li>|</li>
                 <li><a href="/hwxxtj/index.php/Home/Index/proAdd">项目添加</a></li>
                 <li>|</li>

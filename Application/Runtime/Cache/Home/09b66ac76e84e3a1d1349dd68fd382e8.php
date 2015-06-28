@@ -24,8 +24,12 @@
                 <li>|</li>
                 <li><a href="/hwxxtj/index.php/Home/Index/proLead">负责的项目</a></li>
                 <li>|</li>
+                <li><a href="/hwxxtj/index.php/Home/Index/countTime">地点设备使用时间</a></li>
+                <li>|</li>
             <?php } else{ ?>
                 <li><a href="/hwxxtj/index.php/Home/Index/proLead">负责的项目</a></li>
+                <li>|</li>
+                <li><a href="/hwxxtj/index.php/Home/Index/countTime">地点设备使用时间</a></li>
                 <li>|</li>
                 <li><a href="/hwxxtj/index.php/Home/Index/proAdd">项目添加</a></li>
                 <li>|</li>
@@ -94,8 +98,8 @@
                 <td width="7.31%">使用时间（起止）</td>
                 <td width="10.16%">联系人/联系电话</td>
                 <td width="10.97%">使用设备</td>
-                <td width="9%">人员(除负责人)</td>
                 <td width="9%">负责人</td>
+                <td width="9%">人员(除负责人)</td>
                 <td width="9%">地点</td>
                 <td width="11.58%">备注</td>
                 <td width="4%">操作</td>
@@ -131,12 +135,12 @@
                 <td><?php echo (date('Y-m-d',$work['doneTime'])); ?></td>
                 <td><?php echo ($proj['unit']); ?></td>
                 <td><?php echo ($proj['proName']); ?></td>
-                <td><?php echo ($proj['useDate']); ?></td>
                 <td><?php echo (date('Y-m-d',$work['useDate'])); ?></td>
+                <td><?php echo ($proj['useTime']); ?></td>
                 <td><?php echo ($proj['tel']); ?></td>
                 <td><?php echo ($proj['device']); ?></td>
-                <td><?php echo ($people); ?></td>
                 <td><?php echo ($captain); ?></td>
+                <td><?php echo ($people); ?></td>
                 <td><?php echo ($proj['place']); ?></td>
                 <td><?php echo ($proj['remark']); ?></td>
                 <td>
@@ -168,13 +172,13 @@
                     <textarea name="device"><?php echo ($proj['device']); ?></textarea>
                 </td>
                 <td align="left">
-                    <?php $i=0; foreach($member as $people){ ?>
-                    <span style="margin-left: 10px;"><input type="checkbox" name="people[]" <?php if($people['id']==$peo[$i]){ ?> checked <?php $i+=1; } ?> value="<?php echo ($people['id']); ?>"><?php echo ($people['name']); ?></span><br/>
+                    <?php foreach($cap as $people){ ?>
+                    <span style="margin-left: 10px;"><input type="radio" name="captain" <?php if($people['id']==$proj['captain']) echo 'checked'; ?> value="<?php echo ($people['id']); ?>"><?php echo ($people['name']); ?></span><br/>
                     <?php } ?>
                 </td>
                 <td align="left">
-                    <?php foreach($cap as $people){ ?>
-                    <span style="margin-left: 10px;"><input type="radio" name="captain" <?php if($people['id']==$proj['captain']) echo 'checked'; ?> value="<?php echo ($people['id']); ?>"><?php echo ($people['name']); ?></span><br/>
+                    <?php $i=0; foreach($member as $people){ ?>
+                    <span style="margin-left: 10px;"><input type="checkbox" name="people[]" <?php if($people['id']==$peo[$i]){ ?> checked <?php $i+=1; } ?> value="<?php echo ($people['id']); ?>"><?php echo ($people['name']); ?></span><br/>
                     <?php } ?>
                 </td>
                 <td><textarea name="place"></textarea></td>

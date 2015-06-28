@@ -24,8 +24,12 @@
                 <li>|</li>
                 <li><a href="/hwxxtj/index.php/Home/Index/proLead">负责的项目</a></li>
                 <li>|</li>
+                <li><a href="/hwxxtj/index.php/Home/Index/countTime">地点设备使用时间</a></li>
+                <li>|</li>
             <?php } else{ ?>
                 <li><a href="/hwxxtj/index.php/Home/Index/proLead">负责的项目</a></li>
+                <li>|</li>
+                <li><a href="/hwxxtj/index.php/Home/Index/countTime">地点设备使用时间</a></li>
                 <li>|</li>
                 <li><a href="/hwxxtj/index.php/Home/Index/proAdd">项目添加</a></li>
                 <li>|</li>
@@ -82,6 +86,9 @@
             <tr align="center">
                 <td colspan="8" align="center"><h2>加班统计表</h2></td>
             </tr>
+            <tr align="left">
+                <td colspan="8" align="left"><h3>服务单位：<?php echo ($proL['unit']); ?></h3></td>
+            </tr>
             <tr align="center">
                 <th width="8%">日期</th>
                 <th width="12%">地点</th>
@@ -106,7 +113,7 @@
                     <button type="button" class="CB">修改</button>
                     <button type="submit" class="DB">删除</button>
                     <input type="hidden" name="operate" value="1">
-                    <input type="hidden" name="url" value="/hwxxtj/index.php/Home/Index/proLead/2014-2015/2/14/15">
+                    <input type="hidden" name="url" value="/hwxxtj/index.php/Home/Index/proLead">
                 </td>
             </tr>
             <tr align="center"  class="changeTr">

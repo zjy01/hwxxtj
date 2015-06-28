@@ -75,8 +75,8 @@
                 <td width="7.31%">使用时间（起止）</td>
                 <td width="10.16%">联系人/联系电话</td>
                 <td width="10.97%">使用设备</td>
-                <td width="9%">人员(除负责人)</td>
                 <td width="9%">负责人</td>
+                <td width="9%">人员(除负责人)</td>
                 <td width="9%">地点</td>
                 <td width="11.58%">备注</td>
                 <td width="4%">操作</td>
@@ -128,12 +128,12 @@
                 <td>{$work['doneTime']|date='Y-m-d',###}</td>
                 <td>{$proj['unit']}</td>
                 <td>{$proj['proName']}</td>
-                <td>{$proj['useDate']}</td>
                 <td>{$work['useDate']|date='Y-m-d',###}</td>
+                <td>{$proj['useTime']}</td>
                 <td>{$proj['tel']}</td>
                 <td>{$proj['device']}</td>
-                <td>{$people}</td>
                 <td>{$captain}</td>
+                <td>{$people}</td>
                 <td>{$proj['place']}</td>
                 <td>{$proj['remark']}</td>
                 <td>
@@ -169,13 +169,13 @@
                     <textarea name="device">{$proj['device']}</textarea>
                 </td>
                 <td align="left">
-                    <?php $i=0; foreach($member as $people){ ?>
-                    <span style="margin-left: 10px;"><input type="checkbox" name="people[]" <?php if($people['id']==$peo[$i]){ ?> checked <?php $i+=1; } ?> value="{$people['id']}">{$people['name']}</span><br/>
+                    <?php foreach($cap as $people){ ?>
+                    <span style="margin-left: 10px;"><input type="radio" name="captain" <?php if($people['id']==$proj['captain']) echo 'checked'; ?> value="{$people['id']}">{$people['name']}</span><br/>
                     <?php } ?>
                 </td>
                 <td align="left">
-                    <?php foreach($cap as $people){ ?>
-                    <span style="margin-left: 10px;"><input type="radio" name="captain" <?php if($people['id']==$proj['captain']) echo 'checked'; ?> value="{$people['id']}">{$people['name']}</span><br/>
+                    <?php $i=0; foreach($member as $people){ ?>
+                    <span style="margin-left: 10px;"><input type="checkbox" name="people[]" <?php if($people['id']==$peo[$i]){ ?> checked <?php $i+=1; } ?> value="{$people['id']}">{$people['name']}</span><br/>
                     <?php } ?>
                 </td>
                 <td><textarea name="place"></textarea></td>

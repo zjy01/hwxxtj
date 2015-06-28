@@ -24,8 +24,12 @@
                 <li>|</li>
                 <li><a href="/hwxxtj/index.php/Home/Index/proLead">负责的项目</a></li>
                 <li>|</li>
+                <li><a href="/hwxxtj/index.php/Home/Index/countTime">地点设备使用时间</a></li>
+                <li>|</li>
             <?php } else{ ?>
                 <li><a href="/hwxxtj/index.php/Home/Index/proLead">负责的项目</a></li>
+                <li>|</li>
+                <li><a href="/hwxxtj/index.php/Home/Index/countTime">地点设备使用时间</a></li>
                 <li>|</li>
                 <li><a href="/hwxxtj/index.php/Home/Index/proAdd">项目添加</a></li>
                 <li>|</li>
@@ -65,8 +69,8 @@
                     <td width="7.31%">使用时间（起止）</td>
                     <td width="10.16%">联系人/联系电话</td>
                     <td width="10.97%">使用设备</td>
-                    <td width="9%">人员(除负责人)</td>
                     <td width="9%">负责人</td>
+                    <td width="9%">人员(除负责人)</td>
                     <td width="13%">地点</td>
                     <td width="11.58%">备注</td>
                 </tr>
@@ -80,7 +84,7 @@
                             <option value="<?php echo ($u['name']); ?>"><?php echo ($u['name']); ?></option>
                             <?php } ?>
                         </select>
-                        <textarea name="otherUnit" id="otherUnit"></textarea>
+                        <textarea name="otherUnit" class="otherUnit"></textarea>
                     </td>
                     <td width="11.38%"><textarea name="proName"></textarea></td>
                     <td width="6.91%"><input name="useDate" class="time-txt" /></td>
@@ -89,21 +93,38 @@
                     <td width="10.97%" align="left">
                         <span style="margin-left: 10px;"><input type="checkbox" name="device[]" value="音响">音响</span><br/>
                         <span style="margin-left: 10px;"><input type="checkbox" name="device[]" value="录像">录像</span><br/>
-                        <span style="margin-left: 10px;"><input type="checkbox" name="device[]" value="投影仪">投影仪</span><br/>
+                        <span style="margin-left: 10px;"><input type="checkbox" name="device[]" value="投影机">投影机</span><br/>
+                        <span style="margin-left: 10px;"><input type="checkbox" name="device[]" value="无线麦克风">无线麦克风</span><br/>
+                        <span style="margin-left: 10px;"><input type="checkbox" name="device[]" value="有线麦克风">有线麦克风</span><br/>
                         <textarea name="device[]" class="device" placeholder="其他更多"></textarea>
+                    </td>
+                    <td width="9%" align="left">
+                        <?php foreach($captain as $people1){ ?>
+                        <span style="margin-left: 10px;"><input type="radio" name="captain" value="<?php echo ($people1['id']); ?>"><?php echo ($people1['name']); ?></span><br/>
+                        <?php } ?>
                     </td>
                     <td width="9%" align="left">
                         <?php foreach($people as $people){ ?>
                            <span style="margin-left: 10px;"><input type="checkbox" name="people[]" value="<?php echo ($people['id']); ?>"><?php echo ($people['name']); ?></span><br/>
                         <?php } ?>
                     </td>
-                    <td width="9%" align="left">
-                        <?php foreach($captain as $people){ ?>
-                            <span style="margin-left: 10px;"><input type="radio" name="captain" value="<?php echo ($people['id']); ?>"><?php echo ($people['name']); ?></span><br/>
-                        <?php } ?>
+                    <td width="13%">
+                        <select name="place" class="selP" onchange="placeSelect(this)">
+                            <option value="">请选择</option>
+                            <option value="自填">自填</option>
+                            <option value="大会堂">大会堂</option>
+                            <option value="B8报告厅">B8报告厅</option>
+                            <option value="八角楼">八角楼</option>
+                            <option value="小剧场">小剧场</option>
+                            <option value="行政楼103">行政楼103</option>
+                            <option value="图书馆报告厅">图书馆报告厅</option>
+                            <option value="E409">E409</option>
+                        </select>
+                        <textarea class="area"></textarea>
                     </td>
-                    <td width="13%"><textarea class="area" name="place"></textarea></td>
-                    <td width="11.58%"><textarea name="remark"></textarea></td>
+                    <td width="11.58%">
+                        <textarea name="remark"></textarea>
+                    </td>
                 </tr>
                 <tr align="center" height="30">
                     <td colspan="11"> <input type="submit" value="提交" style="width:50px;" onclick="return weekCheck()"></td>

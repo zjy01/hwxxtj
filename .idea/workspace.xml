@@ -28,38 +28,18 @@
       <file leaf-file-name="css.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Public/css/css.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2376" max-vertical-offset="4444">
-              <caret line="114" column="18" selection-start-line="114" selection-start-column="18" selection-end-line="114" selection-end-column="18" />
+            <state vertical-scroll-proportion="-14.466666" vertical-offset="2778" max-vertical-offset="4510">
+              <caret line="146" column="18" selection-start-line="146" selection-start-column="18" selection-end-line="146" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="js.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="js.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Public/js/js.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5641026" vertical-offset="3234" max-vertical-offset="4840">
-              <caret line="171" column="29" selection-start-line="171" selection-start-column="29" selection-end-line="171" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/test.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="154" max-vertical-offset="418">
-              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/header.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="22" max-vertical-offset="792">
-              <caret line="1" column="63" selection-start-line="1" selection-start-column="63" selection-end-line="1" selection-end-column="63" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="4026" max-vertical-offset="5170">
+              <caret line="76" column="5" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -68,7 +48,7 @@
       <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/footer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="220">
+            <state vertical-scroll-proportion="-2.1290324" vertical-offset="0" max-vertical-offset="220">
               <caret line="3" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="3" selection-end-column="48" />
               <folding />
             </state>
@@ -78,33 +58,9 @@
       <file leaf-file-name="jqjs.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Public/js/jqjs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
-              <caret line="2" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
+              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery-ui.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Public/js/jquery-ui.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="154">
-              <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="setTime.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Public/js/setTime.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="309" max-vertical-offset="1892">
-              <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <marker date="1435471436461" expanded="true" signature="417:590" placeholder="..." />
-                <marker date="1435471436461" expanded="true" signature="1670:1684" placeholder="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -112,9 +68,23 @@
       <file leaf-file-name="IndexController.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="5896" max-vertical-offset="12518">
-              <caret line="268" column="35" selection-start-line="268" selection-start-column="35" selection-end-line="268" selection-end-column="35" />
-              <folding />
+            <state vertical-scroll-proportion="-10.836065" vertical-offset="9019" max-vertical-offset="13156">
+              <caret line="440" column="42" selection-start-line="440" selection-start-column="38" selection-end-line="440" selection-end-column="42" />
+              <folding>
+                <marker date="1435480216121" expanded="true" signature="2806:2871" placeholder="..." />
+                <marker date="1435480216121" expanded="true" signature="3258:3268" placeholder="..." />
+                <marker date="1435480216121" expanded="true" signature="3391:3401" placeholder="..." />
+                <marker date="1435480216121" expanded="true" signature="6279:6344" placeholder="..." />
+                <marker date="1435480216121" expanded="true" signature="8315:8380" placeholder="..." />
+                <marker date="1435480216121" expanded="true" signature="9149:9214" placeholder="..." />
+                <marker date="1435480216121" expanded="true" signature="9282:9347" placeholder="..." />
+                <marker date="1435480216121" expanded="true" signature="9518:9583" placeholder="..." />
+                <marker date="1435480216121" expanded="true" signature="9651:9716" placeholder="..." />
+                <marker date="1435480216121" expanded="true" signature="17561:17626" placeholder="..." />
+                <marker date="1435480216121" expanded="true" signature="17716:17781" placeholder="..." />
+                <marker date="1435480216121" expanded="true" signature="17984:18049" placeholder="..." />
+                <marker date="1435480216121" expanded="true" signature="18139:18204" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -122,8 +92,8 @@
       <file leaf-file-name="proLead.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/proLead.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1716" max-vertical-offset="2838">
-              <caret line="98" column="45" selection-start-line="98" selection-start-column="45" selection-end-line="98" selection-end-column="45" />
+            <state vertical-scroll-proportion="-20.580645" vertical-offset="1716" max-vertical-offset="2904">
+              <caret line="107" column="71" selection-start-line="107" selection-start-column="71" selection-end-line="107" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -132,8 +102,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1142" max-vertical-offset="1958">
-              <caret line="79" column="10" selection-start-line="79" selection-start-column="10" selection-end-line="80" selection-end-column="29" />
+            <state vertical-scroll-proportion="-23.806452" vertical-offset="868" max-vertical-offset="1958">
+              <caret line="73" column="34" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -142,9 +112,11 @@
       <file leaf-file-name="proSet.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/proSet.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="264" max-vertical-offset="4554">
-              <caret line="29" column="24" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="24" />
-              <folding />
+            <state vertical-scroll-proportion="-2.8387096" vertical-offset="2772" max-vertical-offset="4554">
+              <caret line="130" column="20" selection-start-line="130" selection-start-column="20" selection-end-line="130" selection-end-column="55" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#td#7;n#tr#1;n#form#1;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -152,8 +124,26 @@
       <file leaf-file-name="proAdd.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/proAdd.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1098" max-vertical-offset="2288">
-              <caret line="65" column="75" selection-start-line="64" selection-start-column="91" selection-end-line="64" selection-end-column="107" />
+            <state vertical-scroll-proportion="-20.258064" vertical-offset="1462" max-vertical-offset="2662">
+              <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#td#6;n#tr#3;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#td#6;n#tr#3;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#2;n#td#6;n#tr#3;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#3;n#td#6;n#tr#3;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#4;n#td#6;n#tr#3;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#td#7;n#tr#3;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#td#8;n#tr#3;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="countTime.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/countTime.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7040359" vertical-offset="956" max-vertical-offset="2266">
+              <caret line="72" column="39" selection-start-line="72" selection-start-column="39" selection-end-line="72" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -162,23 +152,9 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="132" max-vertical-offset="572">
+            <state vertical-scroll-proportion="-4.2580647" vertical-offset="0" max-vertical-offset="572">
               <caret line="14" column="75" selection-start-line="14" selection-start-column="75" selection-end-line="14" selection-end-column="75" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExcelController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/ExcelController.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="4897" max-vertical-offset="6006">
-              <caret line="228" column="39" selection-start-line="228" selection-start-column="39" selection-end-line="228" selection-end-column="39" />
-              <folding>
-                <element signature="e#33#65#0#PHP" expanded="true" />
-                <element signature="e#10740#11581#0#PHP" expanded="false" />
-                <element signature="e#11644#12125#0#PHP" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -203,9 +179,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Public/css/css.css" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Index/proLead.html" />
+        <option value="$PROJECT_DIR$/Application/Home/Controller/ExcelController.class.php" />
         <option value="$PROJECT_DIR$/Public/js/setTime.js" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Index/header.html" />
+        <option value="$PROJECT_DIR$/Public/css/css.css" />
         <option value="$PROJECT_DIR$/Public/js/js.js" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Index/proAdd.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Index/proSet.html" />
+        <option value="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" />
+        <option value="$PROJECT_DIR$/Public/js/jqjs.js" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Index/countTime.html" />
       </list>
     </option>
   </component>
@@ -469,6 +453,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wamp\www\hwxxtj\Application\Home\View\Index" />
       <recent name="D:\wamp\www\hwxxtj\Public\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -518,7 +503,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-1928" y="-8" width="1936" height="1096" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -564,18 +549,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/ExcelController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4897" max-vertical-offset="5940">
-          <caret line="228" column="39" selection-start-line="228" selection-start-column="39" selection-end-line="228" selection-end-column="39" />
-          <folding>
-            <element signature="e#33#65#0#PHP" expanded="true" />
-            <element signature="e#10740#11581#0#PHP" expanded="false" />
-            <element signature="e#11644#12125#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Public/css/jquery-ui.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="44" max-vertical-offset="27082">
@@ -620,7 +593,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="5192" max-vertical-offset="12518">
           <caret line="263" column="35" selection-start-line="263" selection-start-column="35" selection-end-line="263" selection-end-column="35" />
-          <folding />
+          <folding>
+            <marker date="1435480216121" expanded="true" signature="2806:2871" placeholder="..." />
+            <marker date="1435480216121" expanded="true" signature="3258:3268" placeholder="..." />
+            <marker date="1435480216121" expanded="true" signature="3391:3401" placeholder="..." />
+            <marker date="1435480216121" expanded="true" signature="6279:6344" placeholder="..." />
+            <marker date="1435480216121" expanded="true" signature="8315:8380" placeholder="..." />
+            <marker date="1435480216121" expanded="true" signature="9149:9214" placeholder="..." />
+            <marker date="1435480216121" expanded="true" signature="9282:9347" placeholder="..." />
+            <marker date="1435480216121" expanded="true" signature="9518:9583" placeholder="..." />
+            <marker date="1435480216121" expanded="true" signature="9651:9716" placeholder="..." />
+            <marker date="1435480216121" expanded="true" signature="17561:17626" placeholder="..." />
+            <marker date="1435480216121" expanded="true" signature="17716:17781" placeholder="..." />
+            <marker date="1435480216121" expanded="true" signature="17984:18049" placeholder="..." />
+            <marker date="1435480216121" expanded="true" signature="18139:18204" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -636,7 +623,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1188" max-vertical-offset="2288">
           <caret line="63" column="38" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="79" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#td#6;n#tr#3;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#td#6;n#tr#3;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#2;n#td#6;n#tr#3;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#3;n#td#6;n#tr#3;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#4;n#td#6;n#tr#3;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#td#7;n#tr#3;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#td#8;n#tr#3;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -654,8 +649,7 @@
           <caret line="228" column="39" selection-start-line="228" selection-start-column="39" selection-end-line="228" selection-end-column="39" />
           <folding>
             <element signature="e#33#65#0#PHP" expanded="true" />
-            <element signature="e#10740#11581#0#PHP" expanded="false" />
-            <element signature="e#11644#12125#0#PHP" expanded="false" />
+            <element signature="e#11718#12199#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -704,7 +698,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="132" max-vertical-offset="12386">
           <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-          <folding />
+          <folding>
+            <marker date="1435480216121" expanded="true" signature="2806:2871" placeholder="..." />
+            <marker date="1435480216121" expanded="true" signature="3258:3268" placeholder="..." />
+            <marker date="1435480216121" expanded="true" signature="3391:3401" placeholder="..." />
+            <marker date="1435480216121" expanded="true" signature="6279:6344" placeholder="..." />
+            <marker date="1435480216121" expanded="true" signature="8315:8380" placeholder="..." />
+            <marker date="1435480216121" expanded="true" signature="9149:9214" placeholder="..." />
+            <marker date="1435480216121" expanded="true" signature="9282:9347" placeholder="..." />
+            <marker date="1435480216121" expanded="true" signature="9518:9583" placeholder="..." />
+            <marker date="1435480216121" expanded="true" signature="9651:9716" placeholder="..." />
+            <marker date="1435480216121" expanded="true" signature="17561:17626" placeholder="..." />
+            <marker date="1435480216121" expanded="true" signature="17716:17781" placeholder="..." />
+            <marker date="1435480216121" expanded="true" signature="17984:18049" placeholder="..." />
+            <marker date="1435480216121" expanded="true" signature="18139:18204" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -722,8 +730,7 @@
           <caret line="228" column="39" selection-start-line="228" selection-start-column="39" selection-end-line="228" selection-end-column="39" />
           <folding>
             <element signature="e#33#65#0#PHP" expanded="true" />
-            <element signature="e#10740#11581#0#PHP" expanded="false" />
-            <element signature="e#11644#12125#0#PHP" expanded="false" />
+            <element signature="e#11718#12199#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -844,58 +851,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/ExcelController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4897" max-vertical-offset="5940">
-          <caret line="228" column="39" selection-start-line="228" selection-start-column="39" selection-end-line="228" selection-end-column="39" />
-          <folding>
-            <element signature="e#33#65#0#PHP" expanded="true" />
-            <element signature="e#10740#11581#0#PHP" expanded="false" />
-            <element signature="e#11644#12125#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="132" max-vertical-offset="572">
-          <caret line="14" column="75" selection-start-line="14" selection-start-column="75" selection-end-line="14" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5896" max-vertical-offset="12518">
-          <caret line="268" column="35" selection-start-line="268" selection-start-column="35" selection-end-line="268" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="22" max-vertical-offset="792">
-          <caret line="1" column="63" selection-start-line="1" selection-start-column="63" selection-end-line="1" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="220">
-          <caret line="3" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="3" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1142" max-vertical-offset="1958">
-          <caret line="79" column="10" selection-start-line="79" selection-start-column="10" selection-end-line="80" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="154" max-vertical-offset="418">
@@ -912,42 +867,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/proAdd.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1098" max-vertical-offset="2288">
-          <caret line="65" column="75" selection-start-line="64" selection-start-column="91" selection-end-line="64" selection-end-column="107" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/proLead.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1716" max-vertical-offset="2838">
-          <caret line="98" column="45" selection-start-line="98" selection-start-column="45" selection-end-line="98" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/proSet.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="264" max-vertical-offset="4554">
-          <caret line="29" column="24" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Public/js/setTime.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="309" max-vertical-offset="1892">
-          <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1435471436461" expanded="true" signature="417:590" placeholder="..." />
-            <marker date="1435471436461" expanded="true" signature="1670:1684" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Public/js/jquery-ui.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="154">
@@ -956,26 +875,145 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Public/js/jqjs.js">
+    <entry file="file://$PROJECT_DIR$/Public/js/setTime.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
-          <caret line="2" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2002">
+          <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1435475560531" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1435475560531" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-23.806452" vertical-offset="868" max-vertical-offset="1958">
+          <caret line="73" column="34" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.677419" vertical-offset="0" max-vertical-offset="880">
+          <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/ExcelController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54260087" vertical-offset="3366" max-vertical-offset="6182">
+          <caret line="175" column="21" selection-start-line="175" selection-start-column="21" selection-end-line="175" selection-end-column="21" />
+          <folding>
+            <element signature="e#33#65#0#PHP" expanded="true" />
+            <element signature="e#11718#12199#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.2580647" vertical-offset="0" max-vertical-offset="572">
+          <caret line="14" column="75" selection-start-line="14" selection-start-column="75" selection-end-line="14" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/proAdd.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.258064" vertical-offset="1462" max-vertical-offset="2662">
+          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#td#6;n#tr#3;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#td#6;n#tr#3;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#2;n#td#6;n#tr#3;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#3;n#td#6;n#tr#3;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#4;n#td#6;n#tr#3;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#td#7;n#tr#3;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#td#8;n#tr#3;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.1290324" vertical-offset="0" max-vertical-offset="220">
+          <caret line="3" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="3" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/proLead.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.580645" vertical-offset="1716" max-vertical-offset="2904">
+          <caret line="107" column="71" selection-start-line="107" selection-start-column="71" selection-end-line="107" selection-end-column="71" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Public/css/css.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2376" max-vertical-offset="4444">
-          <caret line="114" column="18" selection-start-line="114" selection-start-column="18" selection-end-line="114" selection-end-column="18" />
+        <state vertical-scroll-proportion="-14.466666" vertical-offset="2778" max-vertical-offset="4510">
+          <caret line="146" column="18" selection-start-line="146" selection-start-column="18" selection-end-line="146" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.836065" vertical-offset="9019" max-vertical-offset="13156">
+          <caret line="440" column="42" selection-start-line="440" selection-start-column="38" selection-end-line="440" selection-end-column="42" />
+          <folding>
+            <marker date="1435480216121" expanded="true" signature="2806:2871" placeholder="..." />
+            <marker date="1435480216121" expanded="true" signature="3258:3268" placeholder="..." />
+            <marker date="1435480216121" expanded="true" signature="3391:3401" placeholder="..." />
+            <marker date="1435480216121" expanded="true" signature="6279:6344" placeholder="..." />
+            <marker date="1435480216121" expanded="true" signature="8315:8380" placeholder="..." />
+            <marker date="1435480216121" expanded="true" signature="9149:9214" placeholder="..." />
+            <marker date="1435480216121" expanded="true" signature="9282:9347" placeholder="..." />
+            <marker date="1435480216121" expanded="true" signature="9518:9583" placeholder="..." />
+            <marker date="1435480216121" expanded="true" signature="9651:9716" placeholder="..." />
+            <marker date="1435480216121" expanded="true" signature="17561:17626" placeholder="..." />
+            <marker date="1435480216121" expanded="true" signature="17716:17781" placeholder="..." />
+            <marker date="1435480216121" expanded="true" signature="17984:18049" placeholder="..." />
+            <marker date="1435480216121" expanded="true" signature="18139:18204" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/proSet.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.8387096" vertical-offset="2772" max-vertical-offset="4554">
+          <caret line="130" column="20" selection-start-line="130" selection-start-column="20" selection-end-line="130" selection-end-column="55" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#td#7;n#tr#1;n#form#1;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/js/jqjs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Public/js/js.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5641026" vertical-offset="3234" max-vertical-offset="4840">
-          <caret line="171" column="29" selection-start-line="171" selection-start-column="29" selection-end-line="171" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1056" max-vertical-offset="5170">
+          <caret line="76" column="5" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/countTime.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7040359" vertical-offset="956" max-vertical-offset="2266">
+          <caret line="72" column="39" selection-start-line="72" selection-start-column="39" selection-end-line="72" selection-end-column="39" />
           <folding />
         </state>
       </provider>

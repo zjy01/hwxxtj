@@ -131,8 +131,6 @@ class IndexController extends Controller {
     		header('Refresh:0;url='.U('password'));
     		echo "<script>alert('原密码输入错误，无法修改密码!');</script></h3>";
     	}
-
-    	$newP=$_POST['newPassword'];
     }
     public function proAdd(){
     	$User=M('User');
@@ -355,6 +353,38 @@ class IndexController extends Controller {
     	$this->display();
     }
 
+    public function countTime($schoolYear=0,$term=0,$week=0){
+        $pro=M('Schedule');
+        $special=M('Special');
+        $unit=M('Unit')->select();
+        $array['unit']=$unit;
+        $User=M('User');
+        $UM=$User->where('id!=1')->select();
+        $array['member']=$UM;
+        $array['cap']=$UM;
+
+        $Y=$pro->distinct(true)->order('schoolYear,term asc')->field('schoolYear,term')->select();
+        if ($schoolYear==0 && $term==0 && $week==0) {
+            $W=$pro->distinct(true)->where('schoolYear="'.$Y[count($Y)-1]['schoolYear'].'" and term="'.$Y[count($Y)-1]['term'].'"')->field('week')->order('week asc')->select();
+            $message=$pro->where('week="'.$W[count($W)-1]['week'].'" and schoolYear="'.$Y[count($Y)-1]['schoolYear'].'" and term="'.$Y[count($Y)-1]['term'].'"')->select();
+        }
+        elseif ($term!=0 && $week==0) {
+            $W=$pro->distinct(true)->where('schoolYear="'.$schoolYear.'" and term="'.$term.'"')->field('week')->select();
+            $message=$pro->where('week="'.$W[count($W)-1]['week'].'" and schoolYear="'.$schoolYear.'" and term="'.$term.'"')->select();
+        }
+        else{
+            $W=$pro->distinct(true)->where('schoolYear="'.$schoolYear.'" and term="'.$term.'"')->field('week')->select();
+            $message=$pro->where('week="'.$week.'" and schoolYear="'.$schoolYear.'" and term="'.$term.'"')->select();
+        }
+        $array['weeks']=$W;
+        $array['schoolY']=$Y;
+        $array['pro']=$message;
+
+        $this->assign($array);
+        $this->display();
+
+    }
+
     function createTable($proId){
     	$wc=M('Workcount');
     	$pro=M('Schedule');
@@ -551,14 +581,13 @@ class IndexController extends Controller {
         $this->display();
 
     }
-//    function test(){
-////    	$a=strtotime('12:00');
-////    	$b=strtotime('13:40');
-////    	$c=($b-$a)/3600;
-////    	echo $c;
-////        $today=date('w',strtotime('2015/03/21'));
-////        echo $today;
-//
-//    }
+    function test(){
+//    	$a=strtotime('12:00');
+//    	$b=strtotime('13:40');
+//    	$c=($b-$a)/3600;
+//    	echo $c;
+//        $today=date('w',strtotime('2015/03/21'));
+//        echo $today;
+    }
 
 }

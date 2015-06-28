@@ -4,7 +4,8 @@
 $(function(){
     $(".time-txt").datepicker({
         monthNames:['一月','二月','三月','April','Maj','六月','Juli','August','September','Oktober','November','December'],
-        dayNamesMin: ['日', '一', '二', '三', '四', '五', '六']
+        dayNamesMin: ['日', '一', '二', '三', '四', '五', '六'],
+        dateFormat: 'yy-mm-dd'
     });
     $(".setTime").click(function(){
         _SetTime(this);

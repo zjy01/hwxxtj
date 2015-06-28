@@ -9,6 +9,7 @@ function textArea(){
     });
     $('.device').height(0.3*td);
     $('.otherUnit').height(0.6*td);
+    $('.area').height(0.6*td);
     textArea.focus(function(){
         $(this).css('background','#c8ecf1');
     });
@@ -106,13 +107,13 @@ function weekCheck(){
 }
 
 function select(){
-    var obj=document.getElementById('otherUnit');
+    var obj = $('.otherUnit');
     var sel=document.getElementById('sel');
     if(sel.value=="自填"){
-        obj.style.display='block';
+        obj.show();
     }
     else{
-        obj.style.display='none';
+        obj.hide();
     }
 }
 
@@ -127,6 +128,20 @@ function eachSelect() {
             obj.eq(index).hide();
         }
     });
+}
+function placeSelect(ob) {
+    var sel=$(ob);
+    var obj = sel.next('textarea');
+        if (sel.val() == '自填') {
+            obj.show();
+            sel.attr('name','sel');
+            obj.attr('name','place');
+        }
+        else {
+            obj.hide();
+            sel.attr('name','place');
+            obj.attr('name','bak');
+        }
 }
 function proSet(){
     var tr=$('tr');

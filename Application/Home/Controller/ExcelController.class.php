@@ -162,6 +162,7 @@ class ExcelController extends Controller
         $work=M('Workcount');
         $status=0;
         if ($wc=$work->where('proId='.$proId)->select()) {
+            $pro=M('Schedule')->where('Id='.$proId)->find();
             $status=1;
         }
         else{
@@ -219,7 +220,7 @@ class ExcelController extends Controller
 //        设置单元格的值
             $objPHPExcel->setActiveSheetIndex(0)
                 ->setCellValue('A1', '加班统计表')
-                ->setCellValue('A2', '服务单位：')
+                ->setCellValue('A2', '服务单位：'.$pro['unit'])
                 ->setCellValue('A3', '日期')
                 ->setCellValue('B3', '地点')
                 ->setCellValue('C3', '加班时段')
