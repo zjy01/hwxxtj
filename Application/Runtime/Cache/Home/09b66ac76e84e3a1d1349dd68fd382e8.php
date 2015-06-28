@@ -128,11 +128,11 @@
             <?php foreach($pro as $proj){ $User=M('User'); $captain=$User->where('id='.$proj['captain'])->field('name')->select(); $captain=$captain[0]['name']; if($proj['people']=='null'){ $people='无'; $peo=null; } else{ $peo=json_decode($proj['people']); foreach($peo as $key=>$p){ $peop=$User->where('id='.$p)->field('name')->select(); if($key==0) $people=$peop[0]['name']; else $people.="、".$peop[0]['name']; } } ?>
             <form method="post" name="change" action="/hwxxtj/index.php/Home/Index/proSetDeal2/<?php echo ($proj['id']); ?>">
             <tr align="center" class="showTr">
-                <td><?php echo ($proj['doneTime']); ?></td>
+                <td><?php echo (date('Y-m-d',$work['doneTime'])); ?></td>
                 <td><?php echo ($proj['unit']); ?></td>
                 <td><?php echo ($proj['proName']); ?></td>
                 <td><?php echo ($proj['useDate']); ?></td>
-                <td><?php echo ($proj['useTime']); ?></td>
+                <td><?php echo (date('Y-m-d',$work['useDate'])); ?></td>
                 <td><?php echo ($proj['tel']); ?></td>
                 <td><?php echo ($proj['device']); ?></td>
                 <td><?php echo ($people); ?></td>
@@ -146,7 +146,7 @@
                 </td>
             </tr>
             <tr  align="center" class="changeTr">
-                <td><input name="doneTime" class="time-txt"/></td>
+                <td><input name="doneTime" class="time-txt" value="<?php echo (date('m/d/Y',$work['doneTime'])); ?>"/></td>
                 <td>
                     <select name="unit" class="sel" onchange="eachSelect()">
                         <option value="请选择">请选择</option>
@@ -161,8 +161,8 @@
                     <textarea name="otherUnit" class="otherUnit"><?php echo ($proj['unit']); ?></textarea>
                 </td>
                 <td><textarea name="proName"><?php echo ($proj['proName']); ?></textarea></td>
-                <td><textarea name="useDate"><?php echo ($proj['useDate']); ?></textarea></td>
-                <td><textarea name="useTime"><?php echo ($proj['useTime']); ?></textarea></td>
+                <td><input name="useDate" class="time-txt" value="<?php echo (date('m/d/Y',$work['useDate'])); ?>"/></td>
+                <td><textarea name="useTime" class="setTime"><?php echo ($proj['useTime']); ?></textarea></td>
                 <td><textarea name="tel"><?php echo ($proj['tel']); ?></textarea></td>
                 <td>
                     <textarea name="device"><?php echo ($proj['device']); ?></textarea>
@@ -197,6 +197,7 @@
     </script>
     <div class="footer">会务信息统计系统 Copyright©<a href="http://www.quantacenter.com">2015Quanta</a></div>
 <script src="/hwxxtj/Public/js/jquery.min.js"></script>
+<script src="/hwxxtj/Public/js/setTime.js"></script>
 <script src="/hwxxtj/Public/js/jquery-ui.min.js"></script>
 <script src="/hwxxtj/Public/js/jqjs.js"></script>
 </div>

@@ -195,6 +195,8 @@ class IndexController extends Controller {
     	}
 
     	$message['people']=json_encode($message['people']);
+        $message['doneTime']=strtotime($message['doneTime']);
+        $message['useDate']=strtotime($message['useDate']);
     	unset($message['otherUnit']);
     	$pro->add($message);
     	header('Refresh:1;url='.U('proAdd'));
@@ -262,6 +264,10 @@ class IndexController extends Controller {
 	    	$week=$message['week'];
 
 	    	$message['people']=json_encode($message['people']);
+
+            $message['doneTime']=strtotime($message['doneTime']);
+            $message['useDate']=strtotime($message['useDate']);
+
 	    	unset($message['otherUnit']);
 
 	    	header('Refresh:1;url='.U('proSet'));

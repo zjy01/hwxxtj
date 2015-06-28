@@ -105,10 +105,10 @@ class ExcelController extends Controller
                 $peop=$User->where('id='.$p)->field('name')->select();
                 $people.="、".$peop[0]['name'];
             }
-            $objPHPExcel->getActiveSheet(0)->setCellValue('A'.($i+6), $printPro[$i]['doneTime']);
+            $objPHPExcel->getActiveSheet(0)->setCellValue('A'.($i+6), date('Y-m-d',$printPro[$i]['doneTime']));
             $objPHPExcel->getActiveSheet(0)->setCellValue('B'.($i+6), $printPro[$i]['unit']);
             $objPHPExcel->getActiveSheet(0)->setCellValue('C'.($i+6), $printPro[$i]['proName']);
-            $objPHPExcel->getActiveSheet(0)->setCellValue('D'.($i+6), $printPro[$i]['useDate']);
+            $objPHPExcel->getActiveSheet(0)->setCellValue('D'.($i+6), date('Y-m-d',$printPro[$i]['useDate']));
             $objPHPExcel->getActiveSheet(0)->setCellValue('E'.($i+6), $printPro[$i]['useTime']);
             $objPHPExcel->getActiveSheet(0)->setCellValue('F'.($i+6), $printPro[$i]['tel']);
             $objPHPExcel->getActiveSheet(0)->setCellValue('G'.($i+6), $printPro[$i]['device']);
@@ -232,7 +232,7 @@ class ExcelController extends Controller
             for($i=0;$i<count($wc);$i++){
                 $User=M('User');
                 $worker=$User->where('id='.$wc[$i]['worker'])->field('name')->select();
-                $objPHPExcel->getActiveSheet(0)->setCellValue('A'.($i+4), $wc[$i]['useDate']);
+                $objPHPExcel->getActiveSheet(0)->setCellValue('A'.($i+4), date('Y-m-d',$wc[$i]['useDate']));
                 $objPHPExcel->getActiveSheet(0)->setCellValue('B'.($i+4), $wc[$i]['place']);
                 $objPHPExcel->getActiveSheet(0)->setCellValue('C'.($i+4), $wc[$i]['useTime']);
                 $objPHPExcel->getActiveSheet(0)->setCellValue('D'.($i+4), $wc[$i]['workTime']);

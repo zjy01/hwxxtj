@@ -15,7 +15,10 @@
 </head>
 <body>
 <div class="page">
-    <div class="header">
+    <head>
+    <link href="/hwxxtj/Public/css/jquery-ui.css" rel="stylesheet">
+</head>
+<div class="header">
     <span class="user_box">你好，<?php echo ($user['name']); ?> <a href="/hwxxtj/index.php/Home/Index/logout">[注销]</a></span>
     <div class="web_title">会务信息统计系统</div>
     <div class="nav_box">
@@ -121,7 +124,7 @@
                 </tr>
             <?php foreach($pro as $proj){ $User=M('User'); $captain=$User->where('id='.$proj['captain'])->field('name')->select(); $captain=$captain[0]['name']; if($proj['people']=='null'){ $people='无'; $peo=null; } else{ $peo=json_decode($proj['people']); foreach($peo as $key=>$p){ $peop=$User->where('id='.$p)->field('name')->select(); if($key==0) $people=$peop[0]['name']; else $people.="、".$peop[0]['name']; } } ?>
                 <tr align="center" class="showTr">
-                    <td><?php echo ($proj['doneTime']); ?></td>
+                    <td><?php echo (date('Y-m-d',$proj['doneTime'])); ?></td>
                     <td><?php echo ($proj['unit']); ?></td>
                     <td><?php echo ($proj['proName']); ?></td>
                     <td><?php echo ($proj['useDate']); ?></td>
@@ -138,6 +141,10 @@
         <?php } ?>
     </div>
     <div class="footer">会务信息统计系统 Copyright©<a href="http://www.quantacenter.com">2015Quanta</a></div>
+<script src="/hwxxtj/Public/js/jquery.min.js"></script>
+<script src="/hwxxtj/Public/js/setTime.js"></script>
+<script src="/hwxxtj/Public/js/jquery-ui.min.js"></script>
+<script src="/hwxxtj/Public/js/jqjs.js"></script>
 </div>
 </body>
 </html>

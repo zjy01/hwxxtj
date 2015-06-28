@@ -6,6 +6,7 @@
 </head>
 <body>
 <textarea class="t"></textarea>
+<input type="txt" class="setTime" />
 <head>
     <link href="/hwxxtj/Public/css/jquery-ui.css" rel="stylesheet">
 </head>
@@ -40,6 +41,8 @@
 </body>
 </html>
 
+<div class="footer">会务信息统计系统 Copyright©<a href="http://www.quantacenter.com">2015Quanta</a></div>
 <script src="/hwxxtj/Public/js/jquery.min.js"></script>
+<script src="/hwxxtj/Public/js/setTime.js"></script>
 <script src="/hwxxtj/Public/js/jquery-ui.min.js"></script>
 <script src="/hwxxtj/Public/js/jqjs.js"></script>

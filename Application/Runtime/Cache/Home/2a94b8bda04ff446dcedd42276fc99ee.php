@@ -83,10 +83,10 @@
             </tr>
             <?php foreach($pro as $key=>$proj){ $User=M('User'); $captain=$User->where('id='.$proj['captain'])->field('name')->select(); $people=$captain[0]['name']; $peo=json_decode($proj['people']); foreach($peo as $p){ $peop=$User->where('id='.$p)->field('name')->select(); $people.="、".$peop[0]['name']; } ?>
             <tr align="center">
-                <td><?php echo ($proj['doneTime']); ?></td>
+                <td><?php echo (date('Y-m-d',$proj['doneTime'])); ?></td>
                 <td><?php echo ($proj['unit']); ?></td>
                 <td><?php echo ($proj['proName']); ?></td>
-                <td><?php echo ($proj['useDate']); ?></td>
+                <td><?php echo (date('Y-m-d',$proj['useDate'])); ?></td>
                 <td><?php echo ($proj['useTime']); ?></td>
                 <td><?php echo ($proj['tel']); ?></td>
                 <td><?php echo ($proj['device']); ?></td>
@@ -99,6 +99,7 @@
     </div>
     <div class="footer">会务信息统计系统 Copyright©<a href="http://www.quantacenter.com">2015Quanta</a></div>
 <script src="/hwxxtj/Public/js/jquery.min.js"></script>
+<script src="/hwxxtj/Public/js/setTime.js"></script>
 <script src="/hwxxtj/Public/js/jquery-ui.min.js"></script>
 <script src="/hwxxtj/Public/js/jqjs.js"></script>
 </div>

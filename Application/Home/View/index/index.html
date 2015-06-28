@@ -64,10 +64,10 @@
                 }
              ?>
             <tr align="center">
-                <td>{$proj['doneTime']}</td>
+                <td>{$proj['doneTime']|date='Y-m-d',###}</td>
                 <td>{$proj['unit']}</td>
                 <td>{$proj['proName']}</td>
-                <td>{$proj['useDate']}</td>
+                <td>{$proj['useDate']|date='Y-m-d',###}</td>
                 <td>{$proj['useTime']}</td>
                 <td>{$proj['tel']}</td>
                 <td>{$proj['device']}</td>

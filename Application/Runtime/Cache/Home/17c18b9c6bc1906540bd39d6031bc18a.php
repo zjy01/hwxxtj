@@ -95,7 +95,7 @@
             <?php foreach($wc as $key => $work){ $User=M('User'); $worker=$User->where('id="'.$work['worker'].'"')->select(); ?>
             <form name="proLead" method="post" action="/hwxxtj/index.php/Home/Index/proLeadDeal/<?php echo ($work['id']); ?>">
             <tr align="center" class="showTr">
-                <td><?php echo ($work['useDate']); ?></td>
+                <td><?php echo (date('Y-m-d',$work['useDate'])); ?></td>
                 <td><?php echo ($work['place']); ?></td>
                 <td><?php echo ($work['useTime']); ?></td>
                 <td><?php echo ($work['workTime']); ?></td>
@@ -110,9 +110,9 @@
                 </td>
             </tr>
             <tr align="center"  class="changeTr">
-                <td><textarea name="useDate"><?php echo ($work['useDate']); ?></textarea></td>
+                <td><input name="useDate" class="time-txt" value="<?php echo (date('m/d/Y',$work['useDate'])); ?>"/></td>
                 <td><textarea name="place"><?php echo ($work['place']); ?></textarea></td>
-                <td><textarea name="useTime"><?php echo ($work['useTime']); ?></textarea></td>
+                <td><textarea name="useTime" class="setTime"><?php echo ($work['useTime']); ?></textarea></td>
                 <td><textarea name="workTime"><?php echo ($work['workTime']); ?></textarea></td>
                 <td><textarea name="proName"><?php echo ($work['proName']); ?></textarea></td>
                 <td><?php echo ($worker[0]['name']); ?></td>
@@ -128,6 +128,7 @@
     </div>
     <div class="footer">会务信息统计系统 Copyright©<a href="http://www.quantacenter.com">2015Quanta</a></div>
 <script src="/hwxxtj/Public/js/jquery.min.js"></script>
+<script src="/hwxxtj/Public/js/setTime.js"></script>
 <script src="/hwxxtj/Public/js/jquery-ui.min.js"></script>
 <script src="/hwxxtj/Public/js/jqjs.js"></script>
     <script>

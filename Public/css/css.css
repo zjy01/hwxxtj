@@ -103,6 +103,8 @@
     margin:10px 20px 0;
     padding-bottom: 5px;
     border-bottom: solid 1px #666666;
+    white-space: nowrap;
+    overflow: auto;
 }
 .weeks .week{
     display: inline-block;

@@ -1,0 +1,20 @@
+
+module mypol 1.0;
+
+require {
+	type httpd_t;
+	type httpd_sys_content_t;
+	class dir { write create add_name };
+	class file { write create };
+}
+
+#============= httpd_t ==============
+
+#!!!! This avc can be allowed using the boolean 'httpd_unified'
+allow httpd_t httpd_sys_content_t:dir create;
+
+#!!!! This avc is allowed in the current policy
+allow httpd_t httpd_sys_content_t:dir { write add_name };
+
+#!!!! This avc can be allowed using the boolean 'httpd_unified'
+allow httpd_t httpd_sys_content_t:file { write create };

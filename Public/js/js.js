@@ -84,7 +84,7 @@ function weekCheck(){
         if(time.value.charAt(j)=='-') status=1;
     }
     if(status==0){
-        alert('请两个时间段点，并用“-”隔开！例如（08:00-17:00）');
+        alert('请填写两个时间段点，并用“-”隔开！例如（08:00-17:00）');
         return false;
     }
     var people=document.getElementsByName('people[]');

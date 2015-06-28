@@ -8,7 +8,10 @@
 </head>
 <body>
 <div class="page">
-    <div class="header">
+    <head>
+    <link href="/hwxxtj/Public/css/jquery-ui.css" rel="stylesheet">
+</head>
+<div class="header">
     <span class="user_box">你好，<?php echo ($user['name']); ?> <a href="/hwxxtj/index.php/Home/Index/logout">[注销]</a></span>
     <div class="web_title">会务信息统计系统</div>
     <div class="nav_box">
@@ -70,6 +73,10 @@
         </div>
     </div>
     <div class="footer">会务信息统计系统 Copyright©<a href="http://www.quantacenter.com">2015Quanta</a></div>
+<script src="/hwxxtj/Public/js/jquery.min.js"></script>
+<script src="/hwxxtj/Public/js/setTime.js"></script>
+<script src="/hwxxtj/Public/js/jquery-ui.min.js"></script>
+<script src="/hwxxtj/Public/js/jqjs.js"></script>
 </div>
 </body>
 </html>

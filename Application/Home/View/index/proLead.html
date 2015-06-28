@@ -79,7 +79,7 @@
             ?>
             <form name="proLead" method="post" action="__CONTROLLER__/proLeadDeal/{$work['id']}">
             <tr align="center" class="showTr">
-                <td>{$work['useDate']}</td>
+                <td>{$work['useDate']|date='Y-m-d',###}</td>
                 <td>{$work['place']}</td>
                 <td>{$work['useTime']}</td>
                 <td>{$work['workTime']}</td>
@@ -94,9 +94,9 @@
                 </td>
             </tr>
             <tr align="center"  class="changeTr">
-                <td><textarea name="useDate">{$work['useDate']}</textarea></td>
+                <td><input name="useDate" class="time-txt" value="{$work['useDate']|date='m/d/Y',###}"/></td>
                 <td><textarea name="place">{$work['place']}</textarea></td>
-                <td><textarea name="useTime">{$work['useTime']}</textarea></td>
+                <td><textarea name="useTime" class="setTime">{$work['useTime']}</textarea></td>
                 <td><textarea name="workTime">{$work['workTime']}</textarea></td>
                 <td><textarea name="proName">{$work['proName']}</textarea></td>
                 <td>{$worker[0]['name']}</td>

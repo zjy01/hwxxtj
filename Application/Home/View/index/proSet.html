@@ -125,11 +125,11 @@
             ?>
             <form method="post" name="change" action="__CONTROLLER__/proSetDeal2/{$proj['id']}">
             <tr align="center" class="showTr">
-                <td>{$proj['doneTime']}</td>
+                <td>{$work['doneTime']|date='Y-m-d',###}</td>
                 <td>{$proj['unit']}</td>
                 <td>{$proj['proName']}</td>
                 <td>{$proj['useDate']}</td>
-                <td>{$proj['useTime']}</td>
+                <td>{$work['useDate']|date='Y-m-d',###}</td>
                 <td>{$proj['tel']}</td>
                 <td>{$proj['device']}</td>
                 <td>{$people}</td>
@@ -143,7 +143,7 @@
                 </td>
             </tr>
             <tr  align="center" class="changeTr">
-                <td><input name="doneTime" class="time-txt"/></td>
+                <td><input name="doneTime" class="time-txt" value="{$work['doneTime']|date='m/d/Y',###}"/></td>
                 <td>
                     <select name="unit" class="sel" onchange="eachSelect()">
                         <option value="请选择">请选择</option>
@@ -162,8 +162,8 @@
                     <textarea name="otherUnit" class="otherUnit">{$proj['unit']}</textarea>
                 </td>
                 <td><textarea name="proName">{$proj['proName']}</textarea></td>
-                <td><textarea name="useDate">{$proj['useDate']}</textarea></td>
-                <td><textarea name="useTime">{$proj['useTime']}</textarea></td>
+                <td><input name="useDate" class="time-txt" value="{$work['useDate']|date='m/d/Y',###}"/></td>
+                <td><textarea name="useTime" class="setTime">{$proj['useTime']}</textarea></td>
                 <td><textarea name="tel">{$proj['tel']}</textarea></td>
                 <td>
                     <textarea name="device">{$proj['device']}</textarea>

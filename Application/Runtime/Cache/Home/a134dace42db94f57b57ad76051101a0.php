@@ -84,7 +84,7 @@
                     </td>
                     <td width="11.38%"><textarea name="proName"></textarea></td>
                     <td width="6.91%"><input name="useDate" class="time-txt" /></td>
-                    <td width="7.31%"><textarea name="useTime" id="useTime"></textarea></td>
+                    <td width="7.31%"><textarea name="useTime" id="useTime" class="setTime"></textarea></td>
                     <td width="10.16%"><textarea name="tel"></textarea></td>
                     <td width="10.97%" align="left">
                         <span style="margin-left: 10px;"><input type="checkbox" name="device[]" value="音响">音响</span><br/>
@@ -117,6 +117,7 @@
     </Script>
     <div class="footer">会务信息统计系统 Copyright©<a href="http://www.quantacenter.com">2015Quanta</a></div>
 <script src="/hwxxtj/Public/js/jquery.min.js"></script>
+<script src="/hwxxtj/Public/js/setTime.js"></script>
 <script src="/hwxxtj/Public/js/jquery-ui.min.js"></script>
 <script src="/hwxxtj/Public/js/jqjs.js"></script>
 </div>
