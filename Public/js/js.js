@@ -169,8 +169,8 @@ function proChange(){
         $(this).next().val(0);
     });
     cb.click(function(){
-        $('.changeTr').show();
-        $('.showTr').hide();
+        $('.changeTr').hide();
+        $('.showTr').show();
         $(this).closest('tr').hide();
         $(this).closest('tr').next().show();
         $('.special1').show();

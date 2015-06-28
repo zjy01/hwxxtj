@@ -65,6 +65,14 @@ function _SetTime(tt) {
     });
 }
 function _select() {
+    if(document.all._shour.value>document.all._ehour.value){
+        alert("开始时间不可以大于结束时间");
+        return false;
+    }
+    else if(document.all._shour.value>=document.all._ehour.value && document.all._sminute.value>document.all._eminute.value){
+        alert("开始时间不可以大于结束时间");
+        return false;
+    }
     _fieldname.value = document.all._shour.value + ":" + document.all._sminute.value + "-" + document.all._ehour.value + ":" + document.all._eminute.value ;
     $("#_contents").css({
         'visibility':"hidden"

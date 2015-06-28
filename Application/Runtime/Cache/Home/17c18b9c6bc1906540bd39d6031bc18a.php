@@ -106,7 +106,7 @@
                     <button type="button" class="CB">修改</button>
                     <button type="submit" class="DB">删除</button>
                     <input type="hidden" name="operate" value="1">
-                    <input type="hidden" name="url" value="/hwxxtj/index.php/Home/Index/proLead">
+                    <input type="hidden" name="url" value="/hwxxtj/index.php/Home/Index/proLead/2014-2015/2/14/15">
                 </td>
             </tr>
             <tr align="center"  class="changeTr">
